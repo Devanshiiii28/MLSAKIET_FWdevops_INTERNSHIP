@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title> nasa project</title>
+
+
+</head>
+<style>
+   /* Fullscreen splash screen */
+   #splashScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #splashScreen img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main content */
+        #mainContent {
+            display: none;
+        }
+  </style>
+
+<body>
+  <!-- Splash Screen -->
+  <div id="splashScreen">
+    <img src="https://jagi.github.io/meteor-astronomy/images/logo.png" alt="Astronomy Logo">
+</div>
+
+<!-- Main Content -->
+<div id="mainContent">
+    <!-- <h1>Welcome to the Astronomy Learning Platform</h1> -->
+    <!-- Rest of your platform's content -->
+</div>
+
+<script>
+    // Show splash screen for 5 seconds, then hide it
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 1500); // 5000 milliseconds = 5 seconds
+    };
+</script>
+  
+  <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <header>
+      <img class="logo" src="https://e7.pngegg.com/pngimages/681/56/png-clipart-planet-computer-icons-earth-symbol-astronomy-planet-miscellaneous-computer-wallpaper.png" alt="mm
+      ">
+      <a class="navbar-brand" href="#">Astronomy learning Platform </a>
+      </header>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+          <li class="nav-item"></li>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <button  type="button" class="btn-close" aria-label="Close"></button>
+  <main>
+    <div class="mainDiv">
+
+    </div>
+<div class="messagediv">
+    <div class="message">
+
+    </div>
+    </div>
+
+    <div>
+      <div class="introcontent"><h3><strong>Introduction to Astronomy</strong></h3>
+        <div class="introastro"><p class="introp">Astronomy is one of the oldest and most fascinating sciences, dedicated to the study of celestial bodies and phenomena beyond Earth's atmosphere. From the earliest stargazers who mapped the night sky with the naked eye to today’s advanced space telescopes peering into distant galaxies, astronomy has played a central role in shaping human understanding of the universe.Astronomy is the scientific exploration of everything beyond Earth's atmosphere, including stars, planets, comets, galaxies, black holes, and even the cosmic background radiation that fills the universe. It encompasses both observational and theoretical branches, allowing us to not only observe the universe but also understand its underlying laws.</p>
+          <img class="introimg" src="https://img.freepik.com/premium-photo/solar-system-with-planets-sun-fantasy-concept-illustration-painting_743201-18479.jpg?w=900" alt="">
+          </div>
+        <h4><strong>Why Study Astronomy?</strong></h4><p>Studying astronomy provides a deep understanding of our place in the universe. It addresses fundamental questions like:</p><ul><li><strong>How did the universe begin?</strong></li><li><strong>What are the origins of stars, planets, and galaxies?</strong></li><li><strong>Are we alone in the universe?</strong></li></ul><p>Astronomy connects with various scientific disciplines, such as physics, chemistry, and mathematics, contributing to advancements in technology, space exploration, and even inspiring new fields like astrobiology.</p><h4><strong>The Importance of Observational Tools</strong></h4><p>At its core, astronomy is an observational science. Early astronomers relied on their eyes, but modern astronomy uses a variety of tools, including:</p><ul><li><strong>Telescopes</strong> to observe distant stars, galaxies, and nebulae.</li><li><strong>Spectrometers</strong> to analyze the light from celestial objects, revealing their composition and movement.</li><li><strong>Space probes</strong> that travel to other planets and moons, sending back vital data for study.</li></ul><h4><strong>The Expanding Universe</strong></h4><p>One of the most astonishing discoveries in modern astronomy is that the universe is constantly expanding. This led to the development of the <strong>Big Bang Theory</strong>, which posits that the universe began from a single, incredibly dense and hot point around 13.8 billion years ago.</p><p>Today, astronomers continue to unravel the mysteries of the cosmos, exploring phenomena such as dark matter, dark energy, black holes, and the possibility of life beyond Earth.</p>
+    </div>
+<hr>
+    <div class="markdown prose w-full break-words dark:prose-invert light"><p>Learning about Earth's near objects, such as asteroids, comets, and other celestial bodies, is important for several reasons:</p><h3>1. <strong>Planetary Defense</strong></h3><p>Understanding near-Earth objects (NEOs) helps us assess potential threats to our planet. Monitoring their orbits can allow us to predict if any might collide with Earth, giving us time to prepare or develop mitigation strategies.</p><h3>2. <strong>Scientific Insight</strong></h3><p>Studying NEOs provides valuable information about the early solar system. They are considered remnants from its formation, and analyzing their composition can help us understand planetary formation and the history of our solar system.</p><h3>3. <strong>Resource Potential</strong></h3><p>Some near-Earth asteroids contain valuable resources, including metals and water. Learning more about these objects could pave the way for future space mining, which might be crucial for sustainable space exploration.</p><h3>4. <strong>Space Exploration</strong></h3><p>NEOs can serve as waypoints or targets for future space missions. Understanding their properties, such as gravity and surface conditions, is essential for planning missions that could involve landing or extracting resources.</p><h3>5. <strong>Public Awareness and Education</strong></h3><p>Studying NEOs fosters interest in science and space exploration. It encourages public awareness of space-related topics, which can inspire future generations of scientists and engineers.</p><h3>6. <strong>Technological Advancement</strong></h3><p>The research and observation of NEOs drive advancements in technology, such as telescopes and spacecraft. These innovations often have broader applications in other fields.</p><p>By learning about Earth's near objects, we not only enhance our scientific knowledge but also contribute to the safety and sustainability of our planet and our future in space exploration.</p></div>
+<hr>
+    <div class="cont">
+
+    <div class="calc-intro">
+      <h3>Here, is a funny and interactive way to know more about the solar system </h3>
+    </div>
+  </div>
+
+    <div class="calculator">
+
+      <h2>Calculate Earth's Distance</h2>
+
+      <label for="celestial-body">Select a celestial body:</label>
+      <select id="celestial-body">
+          <option value="">--Select--</option>
+          <option value="Sun">Sun</option>
+          <option value="Mercury">Mercury</option>
+          <option value="Venus">Venus</option>
+          <option value="Earth">Earth</option>
+          <option value="Mars">Mars</option>
+          <option value="Jupiter">Jupiter</option>
+          <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Neptune">Neptune</option>
+          <option value="Moon">Moon (Earth's Moon)</option>
+        
+      </select>
+  
+      <button id="calculate-button">Calculate Distance</button>
+      <div id="result"></div>
+  
+      
+  </div> 
+  <div class="moons">
+  <h2>Total Number of Moons</h2>
+  
+      <label for="planet">Select a planet:</label>
+      <select id="planet">
+          <option value="">--Select--</option>
+          <option value="Mercury">Mercury</option>
+          <option value="Venus">Venus</option>
+          <option value="Earth">Earth</option>
+          <option value="Mars">Mars</option>
+          <option value="Jupiter">Jupiter</option>
+          <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Neptune">Neptune</option>
+      </select>
+      <button id="calculate-btn">Show Number of Moons</button>
+      <div id="resultt"></div>
+      </div>
+<div class="cards">
+      <div class="card1" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ehgSRAdHFapDWHpwDjbKL11oY4NcJ1FbAw&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Black hole</h5>
+            
+          <p class="card-text">The nearest known black hole to Earth is V616 Monocerotis, also known as A0620-00, located about 3,000 light-years away in the constellation Monoceros. It is a stellar black hole with a mass roughly 6 to 12 times that of our Sun.
+  
+            Another potential candidate is a black hole in the V404 Cygni system, which is also around 7,800 light-years away. However, it’s worth noting that there may be closer black holes that haven't been detected yet, as they can be challenging to find without the accretion disks that emit X-rays.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Black_hole" class="btn btn-primary">read more</a>
+        </div>
+        
+      </div>
+      <div class="card2" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ7asOHQKwMHRNCgSYDAGcXt4mymsavdbDbA&s" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GALAXY</h5>
+          <p class="card-text">The nearest galaxy to Earth is the Canis Major Dwarf Galaxy, which is about 25,000 light-years away. It's a small satellite galaxy of the Milky Way.
+  
+            However, the Andromeda Galaxy (M31) is the nearest spiral galaxy and is approximately 2.537 million light-years away. It’s much larger and more prominent than the Canis Major Dwarf Galaxy and is on a collision course with the Milky Way, expected to merge with it in about 4.5 billion years.</p>
+          <a href="https://en.wikipedia.org/wiki/Andromeda_Galaxy" class="btn btn-primary">read more</a>
+        </div>
+      </div>
+      <div class="card3" >
+        <img src="https://cdn.mos.cms.futurecdn.net/fpkcGfVHtKWEgYSJBfg69h-1200-80.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Star</h5>
+          <p class="card-text">The nearest star system to Earth is Alpha Centauri, which is about 4.37 light-years away. It consists of three stars:
+  
+            Alpha Centauri A: A sun-like star.
+            Alpha Centauri B: A slightly smaller and cooler star.
+            Proxima Centauri: A red dwarf that is actually the closest of the three, at about 4.24 light-years away. Proxima Centauri has at least one confirmed exoplanet in its habitable zone, called Proxima b.</p>
+          <a href="https://en.wikipedia.org/wiki/Alpha_Centauri" class="btn btn-primary">read more</a>
+        </div>
+      </div>
+    </div>
+      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="DID YOU KNOW?" data-bs-content="the moon is the earth's natural satellite as it revolves around it.">an amazing fact</button>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+          popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+          });
+        });
+      </script>
+    
+    
+    
+  </main>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="column">
+                <h5>ABOUT US</h5>
+                <p>Astronomy Learning Platform is dedicated to making space science and astronomy accessible to everyone. Whether you're a student, an enthusiast, or just curious about the cosmos, our platform offers engaging resources, interactive tools, and expert insights to help you explore the universe.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="column">
+                <h5>GROUP MEMBERS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-white">DEVANSHI</a></li>
+                    <li><a href="/about.html" class="text-white">MANSHA</a></li>
+                    <li><a href="/lessons.html" class="text-white">KIRTY</a></li>
+                    <li><a href="/quizzes.html" class="text-white">ANJALI</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="column">
+                <h5>CONTACT US</h5>
+                <div class="gphone">
+                <div class="gmail">
+                  <div class="d">
+                  <i class="fa-solid fa-envelope"></i>
+                     <pre>devanshibansal74@gmail.com</pre>
+                    </div>
+                    <div class="m">
+                  <i class="fa-solid fa-envelope"></i>
+                    <pre>manshaatreja57@gmail.com</pre>
+                  </div>
+                  <div class="k">
+                  <i class="fa-solid fa-envelope"></i>
+                    <pre>kirty2904@gmail.com</pre>
+                  </div>
+                  <div class="a">
+                    <i class="fa-solid fa-envelope"></i>
+                    <pre> <a> ayz80666@gmail.com</a></pre>
+                  </div>
+                </div>
+                <div class="icons">
+                    
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <hr class="my-3">
+        <!-- Copyright Section -->
+        <div class="text-center">
+            <p>&copy; 2024 Astronomy Learning Platform. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    -->
+    <script src="app.js"></script>
+</body>
+
+</html>

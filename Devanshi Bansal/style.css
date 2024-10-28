@@ -1,0 +1,296 @@
+/* body{
+    
+    background: url(https://assets.mixkit.co/videos/1610/1610-thumb-360-0.jpg);
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+  .mainDiv{
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-size-adjust: 100px;
+      font-size: 50px;
+      font-family: cursive;
+      margin: 5px;
+  }
+  .btn-close{
+      background-color: red;
+      cursor: pointer;
+      float: right;
+      border: 1px solid white;
+      border-radius: 2px;
+  }
+  .logo{
+    height: 50px;
+    width: 50px;
+  }
+  .distance{
+    color: black;
+    display: flex;
+    margin: 15px;
+  }
+  .navbar{
+    background-color: rgb(15, 15, 84);
+  }
+  .container-fluid{
+    color: white;
+  }
+  .message{
+    height: 100px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 223);
+    box-shadow: 5px 5px 5px 5px grey;
+    
+  
+  }
+  .message:hover{
+    background-color: azure;
+    cursor: pointer;
+  }
+  .messagediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    
+  }
+  
+  /* body{
+    background: url(https://images.unsplash.com/photo-1517639493569-5666a7b2f494?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  } */
+  .introastro{
+    
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 20px;
+    gap: 200px;
+  }
+  .introimg{ 
+    width: 600px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+  .introp{
+    width: 60%;
+  }
+  .introcontent{
+    margin: 40px;
+    font-size: 20px;
+  }
+  .calculator {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  select, button {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .moons{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+  }
+  select, button {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  #resultt {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 700px;
+    
+  }
+  
+  /* .card1,.card2,.card3{
+  border-radius: 20px;
+  width: 600px;
+  
+  padding: 10px;
+  } */
+  .card-body{
+    width: 400px;
+    
+    padding: 10px;
+  
+    
+    padding-top: 20px;
+    
+  }
+  .card-img-top{
+    width: 400px;
+  }
+  .card1,.card2,.card3{
+    
+    width: 400px;
+    height: 610px;
+    background-color: white;
+    border-radius: 20px;
+  
+  }
+  .card-title{
+    font-size: 25px;
+  }
+  .footer {
+    padding: 40px 0;
+    font-size: 30px;
+  }
+  
+  .footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer ul li a:hover {
+    color: lightgray;
+  }
+  
+  .footer .social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .footer .social-icons a:hover {
+    color: lightgray;
+  }
+  
+  .text-white {
+    color: white !important;
+  }
+  
+  .bg-dark {
+    background-color: black;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between; /* Change this for better spacing */
+    align-items: flex-start;
+   
+    
+    /* Adjust alignment */
+  }
+  
+  .column {
+    flex: 1; /* Ensure equal spacing */
+    margin-right: 20px; /* Space between columns */
+  }
+  
+  .column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .gmail{
+    display: flex;
+    flex-direction: column;
+  }
+  .d{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .m{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .k{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .gphone{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .calc-intro{
+    
+    height: 150px;
+    width: 1000px;
+    border: 2px solid black;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 223);
+    box-shadow: 5px 5px 5px 5px grey;
+   
+  }
+  .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+  }
+  .markdown{
+    font-size: 25px;
+    margin: 40px;
+  }
+  .introcontent{
+    font-size: 25px;
+  }
